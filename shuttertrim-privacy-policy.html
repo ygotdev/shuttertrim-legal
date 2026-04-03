@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShutterTrim — Privacy Policy</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F7F6F2;
+    --surface: #FFFFFF;
+    --text: #1A1A18;
+    --muted: #6B6B65;
+    --accent: #2D5BE3;
+    --accent-light: #EEF2FD;
+    --border: #E4E3DC;
+    --green: #1A7A4A;
+    --green-light: #EBF7F1;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 16px;
+  }
+  .header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 32px 24px;
+    text-align: center;
+  }
+  .app-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--accent-light);
+    color: var(--accent);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    font-family: 'DM Mono', monospace;
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .lang-switch {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+  }
+  .lang-btn {
+    padding: 6px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: transparent;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--muted);
+    transition: all 0.15s;
+  }
+  .lang-btn.active {
+    background: var(--text);
+    color: white;
+    border-color: var(--text);
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px;
+  }
+  .notice {
+    background: var(--green-light);
+    border: 1px solid #A8DFC4;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .notice-icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+  .notice p { font-size: 14px; color: var(--green); font-weight: 500; }
+  .section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-bottom: 16px;
+  }
+  .section-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--accent);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    letter-spacing: -0.3px;
+  }
+  h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  p { color: var(--muted); margin-bottom: 12px; font-size: 15px; }
+  ul { margin: 8px 0 12px 0; padding-left: 0; list-style: none; }
+  ul li {
+    color: var(--muted);
+    font-size: 15px;
+    padding: 4px 0 4px 20px;
+    position: relative;
+  }
+  ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .tag {
+    display: inline-block;
+    background: var(--accent-light);
+    color: var(--accent);
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: 'DM Mono', monospace;
+    font-weight: 500;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+  .contact-box {
+    background: var(--text);
+    color: white;
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-top: 32px;
+    text-align: center;
+  }
+  .contact-box p { color: rgba(255,255,255,0.65); margin-bottom: 12px; }
+  .contact-box a {
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    padding-bottom: 2px;
+  }
+  .footer {
+    text-align: center;
+    padding: 32px 24px;
+    color: var(--muted);
+    font-size: 13px;
+    border-top: 1px solid var(--border);
+    margin-top: 48px;
+  }
+  .lang-content { display: none; }
+  .lang-content.active { display: block; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="app-badge">📸 ShutterTrim</div>
+  <h1>Privacy Policy</h1>
+  <p class="subtitle">Last updated: March 5, 2026</p>
+  <div class="lang-switch">
+    <button class="lang-btn active" onclick="switchLang('en')">English</button>
+    <button class="lang-btn" onclick="switchLang('tr')">Türkçe</button>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- ENGLISH -->
+  <div class="lang-content active" id="lang-en">
+
+    <div class="notice">
+      <div class="notice-icon">🔒</div>
+      <p>ShutterTrim processes everything on your device. Your photos and videos never leave your phone and are never uploaded to any server.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">01</div>
+      <h2>Who We Are</h2>
+      <p>ShutterTrim is developed and maintained by an independent individual developer, not a company. When this policy refers to "we," "us," or "our," it refers to the individual developer operating under the contact email below.</p>
+      <p>Contact: <a href="mailto:ygotdev@gmail.com">ygotdev@gmail.com</a></p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">02</div>
+      <h2>Data We Store On Your Device</h2>
+      <p>ShutterTrim stores the following data <strong>locally on your device only</strong>, using AsyncStorage. This data never leaves your device:</p>
+      <ul>
+        <li>App preferences (language, dark mode, settings)</li>
+        <li>Gamification progress (streak count, achievements, personal records, daily goals, weekly challenges)</li>
+        <li>Health score history and session statistics</li>
+        <li>Premium subscription status (cached locally for offline access)</li>
+        <li>Remaining swipe count and notification preferences</li>
+      </ul>
+      <p>None of this data is transmitted to us or any third party.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">03</div>
+      <h2>Permissions We Request</h2>
+      <h3>Photo Library Access</h3>
+      <p>Required to display your photos and videos in the app so you can review and delete them. We do not copy, upload, or analyze your media files. All operations happen locally on your device.</p>
+      <h3>Microphone Access</h3>
+      <p>Required only to play video files with sound within the app. We do not record audio.</p>
+      <h3>Notification Permission</h3>
+      <p>Used to send you optional reminders (e.g., daily cleaning goals, streak reminders). You can disable notifications at any time from your device settings.</p>
+      <h3>App Tracking Transparency (iOS 14.5+)</h3>
+      <p>We ask for your permission to use your device's Advertising ID to show you more relevant ads through Google AdMob. If you decline, you will still see ads — they just won't be personalized. This does not affect app functionality in any way.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">04</div>
+      <h2>Third-Party Services</h2>
+      <p>We use the following trusted third-party services. Each has its own privacy policy:</p>
+      <h3><span class="tag">Ads</span> Google AdMob</h3>
+      <p>Displays advertisements within the app. AdMob may collect anonymous identifiers (such as your Advertising ID) to serve relevant ads. You can opt out of personalized ads in your device settings (Settings → Privacy → Tracking on iOS). <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy →</a></p>
+      <h3><span class="tag">Purchases</span> RevenueCat</h3>
+      <p>Manages in-app purchases and subscription status. RevenueCat may collect anonymous purchase-related data to verify and restore your subscription. No personally identifiable information is shared. <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy →</a></p>
+      <h3><span class="tag">Payments</span> Apple App Store</h3>
+      <p>All payments are processed exclusively by Apple. We never see, process, or store your payment information. <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy →</a></p>
+      <h3><span class="tag">Notifications</span> Notifee</h3>
+      <p>Used to schedule and display local push notifications on your device. All notifications are generated locally — no data is sent to external servers.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">05</div>
+      <h2>Data We Do NOT Collect</h2>
+      <ul>
+        <li>Your photos, videos, or any media files</li>
+        <li>Your name, email address, or any account information</li>
+        <li>Your location</li>
+        <li>Your contacts or calendar data</li>
+        <li>Any usage analytics or crash reports (no analytics SDK is installed)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-num">06</div>
+      <h2>Children's Privacy</h2>
+      <p>ShutterTrim is not directed to children under the age of 13. We do not knowingly collect any personal information from children. If you believe a child has provided personal information, please contact us and we will take immediate steps to remove it.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">07</div>
+      <h2>Data Retention & Deletion</h2>
+      <p>All data stored by ShutterTrim lives on your device. You can delete all app data at any time by uninstalling the app. This permanently removes all locally stored preferences, progress, and cached information.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">08</div>
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. When we do, we will update the "Last Updated" date at the top of this page. We encourage you to review this policy periodically. Continued use of the app after changes constitutes your acceptance of the updated policy.</p>
+    </div>
+
+    <div class="contact-box">
+      <p>Questions about this Privacy Policy?</p>
+      <a href="mailto:ygotdev@gmail.com">ygotdev@gmail.com</a>
+    </div>
+
+  </div>
+
+  <!-- TÜRKÇE -->
+  <div class="lang-content" id="lang-tr">
+
+    <div class="notice">
+      <div class="notice-icon">🔒</div>
+      <p>ShutterTrim her şeyi cihazınızda işler. Fotoğraflarınız ve videolarınız hiçbir zaman telefonunuzdan çıkmaz ve hiçbir sunucuya yüklenmez.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">01</div>
+      <h2>Biz Kimiz?</h2>
+      <p>ShutterTrim, bir şirket tarafından değil, bağımsız bir bireysel geliştirici tarafından geliştirilmekte ve sürdürülmektedir. Bu politikada "biz", "bize" veya "bizim" ifadeleri, aşağıdaki iletişim e-postası altında faaliyet gösteren bireysel geliştiriciyi ifade eder.</p>
+      <p>İletişim: <a href="mailto:ygotdev@gmail.com">ygotdev@gmail.com</a></p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">02</div>
+      <h2>Cihazınızda Sakladığımız Veriler</h2>
+      <p>ShutterTrim, aşağıdaki verileri <strong>yalnızca cihazınızda yerel olarak</strong> AsyncStorage kullanarak saklar. Bu veriler hiçbir zaman cihazınızdan çıkmaz:</p>
+      <ul>
+        <li>Uygulama tercihleri (dil, karanlık mod, ayarlar)</li>
+        <li>Gamification ilerlemesi (seri sayısı, başarımlar, kişisel rekorlar, günlük hedefler, haftalık meydan okumalar)</li>
+        <li>Sağlık skoru geçmişi ve oturum istatistikleri</li>
+        <li>Premium abonelik durumu (çevrimdışı erişim için yerel önbellek)</li>
+        <li>Kalan kaydırma sayısı ve bildirim tercihleri</li>
+      </ul>
+      <p>Bu verilerin hiçbiri bize veya herhangi bir üçüncü tarafa iletilmez.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">03</div>
+      <h2>İstediğimiz İzinler</h2>
+      <h3>Fotoğraf Kütüphanesi Erişimi</h3>
+      <p>Fotoğraflarınızı ve videolarınızı uygulamada görüntüleyebilmeniz, inceleyebilmeniz ve silebilmeniz için gereklidir. Medya dosyalarınızı kopyalamıyor, yüklemiyor veya analiz etmiyoruz. Tüm işlemler cihazınızda yerel olarak gerçekleşir.</p>
+      <h3>Mikrofon Erişimi</h3>
+      <p>Yalnızca uygulama içinde video dosyalarını sesli oynatmak için gereklidir. Ses kaydı yapmıyoruz.</p>
+      <h3>Bildirim İzni</h3>
+      <p>Size isteğe bağlı hatırlatıcılar göndermek için kullanılır (örn. günlük temizlik hedefleri, seri hatırlatıcıları). Bildirimleri istediğiniz zaman cihaz ayarlarınızdan devre dışı bırakabilirsiniz.</p>
+      <h3>Uygulama Takip Şeffaflığı (iOS 14.5+)</h3>
+      <p>Google AdMob aracılığıyla size daha alakalı reklamlar göstermek için cihazınızın Reklam Kimliği'ni kullanma iznizi istiyoruz. Reddederseniz reklamları görmeye devam edersiniz, sadece kişiselleştirilmiş olmaz. Bu durum uygulamanın işlevselliğini hiçbir şekilde etkilemez.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">04</div>
+      <h2>Üçüncü Taraf Hizmetler</h2>
+      <p>Aşağıdaki güvenilir üçüncü taraf hizmetleri kullanıyoruz. Her birinin kendi gizlilik politikası vardır:</p>
+      <h3><span class="tag">Reklam</span> Google AdMob</h3>
+      <p>Uygulama içinde reklam gösterir. AdMob, alakalı reklamlar sunmak için anonim tanımlayıcılar (Reklam Kimliği gibi) toplayabilir. Cihaz ayarlarınızdan kişiselleştirilmiş reklamları devre dışı bırakabilirsiniz (iOS'ta Ayarlar → Gizlilik → Takip). <a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikası →</a></p>
+      <h3><span class="tag">Satın Alma</span> RevenueCat</h3>
+      <p>Uygulama içi satın almaları ve abonelik durumunu yönetir. RevenueCat, aboneliğinizi doğrulamak ve geri yüklemek için anonim satın alma verilerini toplayabilir. Kişisel olarak tanımlanabilir hiçbir bilgi paylaşılmaz. <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Gizlilik Politikası →</a></p>
+      <h3><span class="tag">Ödeme</span> Apple App Store</h3>
+      <p>Tüm ödemeler yalnızca Apple tarafından işlenir. Ödeme bilgilerinizi asla görmüyor, işlemiyor veya saklamıyoruz. <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Gizlilik Politikası →</a></p>
+      <h3><span class="tag">Bildirimler</span> Notifee</h3>
+      <p>Cihazınızda yerel push bildirimleri zamanlamak ve görüntülemek için kullanılır. Tüm bildirimler yerel olarak oluşturulur — harici sunuculara hiçbir veri gönderilmez.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">05</div>
+      <h2>Toplamadığımız Veriler</h2>
+      <ul>
+        <li>Fotoğraflarınız, videolarınız veya herhangi bir medya dosyası</li>
+        <li>Adınız, e-posta adresiniz veya herhangi bir hesap bilgisi</li>
+        <li>Konumunuz</li>
+        <li>Kişileriniz veya takvim verileriniz</li>
+        <li>Herhangi bir kullanım analitiği veya çökme raporu (analitik SDK yüklü değil)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-num">06</div>
+      <h2>Çocukların Gizliliği</h2>
+      <p>ShutterTrim, 13 yaşın altındaki çocuklara yönelik değildir. Çocuklardan bilerek kişisel bilgi toplamıyoruz. Bir çocuğun kişisel bilgi sağladığını düşünüyorsanız, lütfen bizimle iletişime geçin; derhal gerekli adımları atacağız.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">07</div>
+      <h2>Veri Saklama ve Silme</h2>
+      <p>ShutterTrim tarafından saklanan tüm veriler cihazınızda bulunur. Uygulamayı kaldırarak tüm uygulama verilerini istediğiniz zaman silebilirsiniz. Bu işlem, yerel olarak saklanan tüm tercihleri, ilerlemeyi ve önbelleğe alınmış bilgileri kalıcı olarak kaldırır.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">08</div>
+      <h2>Bu Politikadaki Değişiklikler</h2>
+      <p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Güncelleme yaptığımızda, bu sayfanın üst kısmındaki "Son Güncelleme" tarihini değiştireceğiz. Politikayı periyodik olarak gözden geçirmenizi öneririz. Değişikliklerden sonra uygulamayı kullanmaya devam etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
+    </div>
+
+    <div class="contact-box">
+      <p>Bu Gizlilik Politikası hakkında sorularınız mı var?</p>
+      <a href="mailto:ygotdev@gmail.com">ygotdev@gmail.com</a>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="footer">
+  ShutterTrim · Independent Developer · <a href="mailto:ygotdev@gmail.com">ygotdev@gmail.com</a>
+</div>
+
+<script>
+function switchLang(lang) {
+  document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+  document.getElementById('lang-' + lang).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
+</body>
+</html>

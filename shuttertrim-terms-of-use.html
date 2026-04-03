@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShutterTrim — Terms of Use</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F7F6F2;
+    --surface: #FFFFFF;
+    --text: #1A1A18;
+    --muted: #6B6B65;
+    --accent: #2D5BE3;
+    --accent-light: #EEF2FD;
+    --border: #E4E3DC;
+    --amber: #92580A;
+    --amber-light: #FEF3E2;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 16px;
+  }
+  .header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 32px 24px;
+    text-align: center;
+  }
+  .app-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--accent-light);
+    color: var(--accent);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    font-family: 'DM Mono', monospace;
+  }
+  h1 { font-size: 32px; font-weight: 600; letter-spacing: -0.5px; margin-bottom: 8px; }
+  .subtitle { color: var(--muted); font-size: 14px; }
+  .lang-switch {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+  }
+  .lang-btn {
+    padding: 6px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: transparent;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--muted);
+    transition: all 0.15s;
+  }
+  .lang-btn.active { background: var(--text); color: white; border-color: var(--text); }
+  .container { max-width: 720px; margin: 0 auto; padding: 48px 24px; }
+  .warning {
+    background: var(--amber-light);
+    border: 1px solid #F5C882;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .warning p { font-size: 14px; color: var(--amber); font-weight: 500; }
+  .section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-bottom: 16px;
+  }
+  .section-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--accent);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  h2 { font-size: 20px; font-weight: 600; margin-bottom: 16px; letter-spacing: -0.3px; }
+  h3 { font-size: 15px; font-weight: 600; margin-top: 20px; margin-bottom: 8px; }
+  p { color: var(--muted); margin-bottom: 12px; font-size: 15px; }
+  ul { margin: 8px 0 12px 0; padding-left: 0; list-style: none; }
+  ul li {
+    color: var(--muted);
+    font-size: 15px;
+    padding: 4px 0 4px 20px;
+    position: relative;
+  }
+  ul li::before { content: '—'; position: absolute; left: 0; color: var(--accent); font-weight: 600; }
+  .highlight {
+    background: var(--amber-light);
+    border-left: 3px solid var(--amber);
+    padding: 12px 16px;
+    border-radius: 0 8px 8px 0;
+    margin: 12px 0;
+  }
+  .highlight p { color: var(--amber); font-weight: 500; margin: 0; font-size: 14px; }
+  .contact-box {
+    background: var(--text);
+    color: white;
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-top: 32px;
+    text-align: center;
+  }
+  .contact-box p { color: rgba(255,255,255,0.65); margin-bottom: 12px; }
+  .contact-box a { color: white; font-weight: 600; font-size: 17px; text-decoration: none; border-bottom: 2px solid rgba(255,255,255,0.3); padding-bottom: 2px; }
+  .footer { text-align: center; padding: 32px 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); margin-top: 48px; }
+  .lang-content { display: none; }
+  .lang-content.active { display: block; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="app-badge">📸 ShutterTrim</div>
+  <h1>Terms of Use</h1>
+  <p class="subtitle">Last updated: March 5, 2026</p>
+  <div class="lang-switch">
+    <button class="lang-btn active" onclick="switchLang('en')">English</button>
+    <button class="lang-btn" onclick="switchLang('tr')">Türkçe</button>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- ENGLISH -->
+  <div class="lang-content active" id="lang-en">
+
+    <div class="warning">
+      <div style="font-size:20px;flex-shrink:0;margin-top:1px">⚠️</div>
+      <p>ShutterTrim permanently deletes files from your device. Please review your selections carefully before confirming any deletion.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">01</div>
+      <h2>Acceptance of Terms</h2>
+      <p>By downloading, installing, or using ShutterTrim ("the App"), you agree to be bound by these Terms of Use. If you do not agree, please do not use the App.</p>
+      <p>ShutterTrim is developed by an independent individual developer, not a company or corporation.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">02</div>
+      <h2>License</h2>
+      <p>We grant you a personal, non-exclusive, non-transferable, and revocable license to use ShutterTrim for your personal, non-commercial use, strictly in accordance with these Terms and the rules of the Apple App Store.</p>
+      <p>You may not:</p>
+      <ul>
+        <li>Copy, modify, or distribute the App or its content</li>
+        <li>Reverse engineer or attempt to extract source code</li>
+        <li>Use the App for any commercial purpose without written permission</li>
+        <li>Remove any copyright or proprietary notices</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-num">03</div>
+      <h2>User Responsibility & Data Deletion</h2>
+      <div class="highlight">
+        <p>⚠️ You are solely responsible for reviewing files before deletion. Deleted files may be permanently removed depending on your device's OS capabilities.</p>
+      </div>
+      <p>ShutterTrim provides tools to help you identify and delete media files from your device. The developer shall not be held liable for any accidental, unintended, or permanent loss of photos, videos, or any other digital content.</p>
+      <p>We strongly recommend reviewing files carefully in the "Maybe" list before permanently deleting them.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">04</div>
+      <h2>Subscriptions & In-App Purchases</h2>
+      <h3>Payment</h3>
+      <p>Payment will be charged to your Apple ID at confirmation of purchase.</p>
+      <h3>Auto-Renewal</h3>
+      <p>Subscriptions (Monthly, Yearly) automatically renew unless auto-renew is turned off at least 24 hours before the end of the current period.</p>
+      <h3>Cancellation</h3>
+      <p>You can manage and cancel subscriptions via your Apple ID account settings (Settings → [Your Name] → Subscriptions). Uninstalling the app does not cancel your subscription.</p>
+      <h3>Lifetime Purchase</h3>
+      <p>The one-time Lifetime purchase grants access to premium features for the lifetime of the app. This does not guarantee the app will remain available indefinitely.</p>
+      <h3>Refunds</h3>
+      <p>All purchases are final and managed by Apple. Refund requests must be directed to Apple in accordance with their refund policy at <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a>.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">05</div>
+      <h2>Advertisements</h2>
+      <p>The free version of ShutterTrim displays advertisements provided by Google AdMob. Premium subscribers enjoy an ad-free experience. By using the free version, you consent to the display of advertisements as described in our Privacy Policy.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">06</div>
+      <h2>Third-Party Services</h2>
+      <p>The App uses third-party services including Google AdMob (advertising) and RevenueCat (subscription management). Your use of these services is subject to their respective terms and privacy policies. We are not responsible for the content, accuracy, or practices of third-party services.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">07</div>
+      <h2>Disclaimer of Warranties</h2>
+      <p>The App is provided on an "AS IS" and "AS AVAILABLE" basis. We make no warranties, expressed or implied, regarding the App's reliability, accuracy, or fitness for a particular purpose. We do not warrant that the App will be error-free, uninterrupted, or fully compatible with all devices or iOS versions.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">08</div>
+      <h2>Limitation of Liability</h2>
+      <p>To the maximum extent permitted by applicable law, the developer shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the App, including but not limited to permanent data loss, device malfunction, or loss of stored media.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">09</div>
+      <h2>Changes to Terms</h2>
+      <p>We reserve the right to modify these Terms at any time. When we do, we will update the "Last Updated" date. Continued use of the App following any changes constitutes your acceptance of the revised Terms.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">10</div>
+      <h2>Governing Law</h2>
+      <p>These Terms shall be governed by and construed in accordance with the laws of the Republic of Turkey, without regard to its conflict of law provisions.</p>
+    </div>
+
+    <div class="contact-box">
+      <p>Questions about these Terms?</p>
+      <a href="mailto:ygotdev@gmail.com">ygotdev@gmail.com</a>
+    </div>
+
+  </div>
+
+  <!-- TÜRKÇE -->
+  <div class="lang-content" id="lang-tr">
+
+    <div class="warning">
+      <div style="font-size:20px;flex-shrink:0;margin-top:1px">⚠️</div>
+      <p>ShutterTrim dosyaları cihazınızdan kalıcı olarak siler. Silme işlemini onaylamadan önce lütfen seçimlerinizi dikkatlice inceleyin.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">01</div>
+      <h2>Koşulların Kabulü</h2>
+      <p>ShutterTrim'i ("Uygulama") indirerek, yükleyerek veya kullanarak bu Kullanım Koşullarına uymayı kabul etmiş olursunuz. Kabul etmiyorsanız lütfen Uygulamayı kullanmayın.</p>
+      <p>ShutterTrim, bir şirket veya kurum tarafından değil, bağımsız bir bireysel geliştirici tarafından geliştirilmektedir.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">02</div>
+      <h2>Lisans</h2>
+      <p>Size, ShutterTrim'i bu Koşullara ve Apple App Store kurallarına uygun şekilde kişisel ve ticari olmayan amaçlarla kullanmanız için kişisel, münhasır olmayan, devredilemez ve iptal edilebilir bir lisans veriyoruz.</p>
+      <p>Aşağıdakileri yapamazsınız:</p>
+      <ul>
+        <li>Uygulamayı veya içeriğini kopyalama, değiştirme veya dağıtma</li>
+        <li>Ters mühendislik uygulama veya kaynak kodu çıkarmaya çalışma</li>
+        <li>Yazılı izin olmadan ticari amaçlarla kullanma</li>
+        <li>Telif hakkı veya mülkiyet bildirimlerini kaldırma</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-num">03</div>
+      <h2>Kullanıcı Sorumluluğu ve Veri Silme</h2>
+      <div class="highlight">
+        <p>⚠️ Silmeden önce dosyaları incelemek tamamen sizin sorumluluğunuzdadır. Silinen dosyalar, cihazınızın işletim sistemi özelliklerine bağlı olarak kalıcı olarak kaldırılabilir.</p>
+      </div>
+      <p>ShutterTrim, cihazınızdaki medya dosyalarını bulmanıza ve silmenize yardımcı olan araçlar sunar. Geliştirici, fotoğrafların, videoların veya diğer dijital içeriklerin yanlışlıkla, kasıtsız veya kalıcı olarak kaybolmasından hiçbir şekilde sorumlu tutulamaz.</p>
+      <p>Kalıcı olarak silmeden önce "Belki" listenizdeki dosyaları dikkatlice incelemenizi şiddetle tavsiye ederiz.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">04</div>
+      <h2>Abonelikler ve Uygulama İçi Satın Almalar</h2>
+      <h3>Ödeme</h3>
+      <p>Ödeme, satın alma onayının ardından Apple kimliğinizden tahsil edilecektir.</p>
+      <h3>Otomatik Yenileme</h3>
+      <p>Abonelikler (Aylık, Yıllık), mevcut dönemin bitiminden en az 24 saat önce otomatik yenileme kapatılmadığı sürece otomatik olarak yenilenir.</p>
+      <h3>İptal</h3>
+      <p>Aboneliklerinizi Apple Kimliği hesap ayarlarınızdan yönetebilir ve iptal edebilirsiniz (Ayarlar → [Adınız] → Abonelikler). Uygulamayı silmek aboneliğinizi otomatik olarak iptal etmez.</p>
+      <h3>Ömür Boyu Satın Alma</h3>
+      <p>Tek seferlik Ömür Boyu satın alma, uygulamanın ömrü boyunca premium özelliklere erişim sağlar. Bu durum uygulamanın süresiz olarak kullanılabilir kalacağını garanti etmez.</p>
+      <h3>İadeler</h3>
+      <p>Tüm satın alımlar nihaidir ve Apple tarafından yönetilir. İade talepleri, Apple'ın iade politikasına tabi olmak üzere <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a> adresine yönlendirilmelidir.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">05</div>
+      <h2>Reklamlar</h2>
+      <p>ShutterTrim'in ücretsiz sürümü, Google AdMob tarafından sağlanan reklamlar gösterir. Premium aboneler reklamsız bir deneyimin keyfini çıkarır. Ücretsiz sürümü kullanarak, Gizlilik Politikamızda açıklandığı şekilde reklam gösterilmesini kabul etmiş olursunuz.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">06</div>
+      <h2>Üçüncü Taraf Hizmetler</h2>
+      <p>Uygulama, Google AdMob (reklamcılık) ve RevenueCat (abonelik yönetimi) dahil olmak üzere üçüncü taraf hizmetleri kullanır. Bu hizmetleri kullanımınız, ilgili şartlara ve gizlilik politikalarına tabidir. Üçüncü taraf hizmetlerinin içeriği, doğruluğu veya uygulamalarından sorumlu değiliz.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">07</div>
+      <h2>Garanti Reddi</h2>
+      <p>Uygulama "OLDUĞU GİBİ" ve "MEVCUT OLDUĞU ŞEKİLDE" sunulmaktadır. Uygulamanın güvenilirliği, doğruluğu veya belirli bir amaca uygunluğu konusunda açık veya zımni hiçbir garanti vermiyoruz. Uygulamanın hatasız, kesintisiz veya tüm cihazlar ya da iOS sürümleriyle tam uyumlu olacağını garanti etmiyoruz.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">08</div>
+      <h2>Sorumluluğun Sınırlandırılması</h2>
+      <p>Yürürlükteki yasaların izin verdiği azami ölçüde, geliştirici; kalıcı veri kaybı, cihaz arızası veya depolanan medyanın kaybı dahil ancak bunlarla sınırlı olmamak üzere, Uygulamayı kullanımınızdan kaynaklanan dolaylı, arızi, özel, sonuç niteliğindeki veya cezai zararlardan sorumlu tutulamaz.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">09</div>
+      <h2>Koşullarda Değişiklik</h2>
+      <p>Bu Koşulları istediğimiz zaman değiştirme hakkımız saklıdır. Değişiklik yapıldığında "Son Güncelleme" tarihini güncelleyeceğiz. Değişikliklerden sonra Uygulamayı kullanmaya devam etmeniz, revize edilmiş Koşulları kabul ettiğiniz anlamına gelir.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">10</div>
+      <h2>Uygulanacak Hukuk</h2>
+      <p>Bu Koşullar, Türkiye Cumhuriyeti kanunlarına göre yorumlanacak ve uygulanacaktır.</p>
+    </div>
+
+    <div class="contact-box">
+      <p>Bu Koşullar hakkında sorularınız mı var?</p>
+      <a href="mailto:ygotdev@gmail.com">ygotdev@gmail.com</a>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="footer">
+  ShutterTrim · Independent Developer · <a href="mailto:ygotdev@gmail.com">ygotdev@gmail.com</a>
+</div>
+
+<script>
+function switchLang(lang) {
+  document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+  document.getElementById('lang-' + lang).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
+</body>
+</html>
